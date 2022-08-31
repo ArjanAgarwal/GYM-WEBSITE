@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM WEBSITE</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body{
+      font-family: 'Dancing Script', cursive;
+      font-size: x-large;
+        color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+    background: url(gym4.jpg) ;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+} 
+.left{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    display: inline-block;
+    /*border: 2px solid red;*/ 
+    text-align: center;
+    background-color: black;
+}
+.left img{
+  width: 120px;
+  filter: invert(100%);
+  
+
+}
+.mid{
+    display: block;
+    width: 40%;
+    margin: 40px auto;
+    /*border:2px solid blue;*/ 
+    background-color: black;
+}
+.right
+{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    display: inline-block;
+    /*border:2px solid pink;*/ 
+}
+.navbar{
+  display: inline-block;
+}
+.navbar li {
+  font-size: larger;
+  display: inline-block;
+}
+.navbar li a {
+  color: aliceblue;
+  padding: 10px 15px;
+}
+.navbar li a:hover {
+  color: pink;
+}
+.btn{
+  background-color: black;
+  color: aliceblue;
+padding: 16px 20px;
+border: 2px solid grey;
+border-radius: 10px;
+font-family: 'Dancing Script', cursive;
+font-size:20px;
+cursor: pointer;
+
+}
+.btn:hover{
+  color: pink;
+}
+.container{
+ /* border: 2px solid green;*/
+margin: 176px 368px;
+padding: 23px 79px;
+width: 33%;
+border: radius 20px; ;
+text-align: center;
+font-size: x-large;
+}
+.a{
+  background-color:black;
+  color: white;
+ 
+}
+.form_group input
+{
+  text-align: center;
+  display: block;
+  width: 305px;
+  margin: 5px 61px;
+  padding: 0px;
+  border: 0px solid black;
+  font-size: larger;
+  border-radius: 20px;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+::placeholder
+{
+  background-color: black;
+  color: aliceblue; 
+  width: 305px;
+  margin: 5px 50px;
+  padding: 2px; 
+  
+  
+}
+
+</style>
+<body>
+  <header class="header"> 
+  <div class="left">
+    <!--left box for logo-->
+   <img src="logo.jpg" alt="">
+   <div>Arjan Fitness</div>
+
+  </div>
+  <div class="mid">
+    <!--mid box for navbar-->
+    
+    <ul class="navbar">
+      <li><a href="#" >Home </a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Fitness</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </div>
+  <div class="right">
+    <!--right box for button-->
+   <button class="btn">Profile</button>
+   <button class="btn">log out</button>
+  </div>
+</header>   
+<div class="container">
+   <h1 class="a">JOIN THE BEST GYM </h1>
+   <form action="noaction.php">
+    <div class="form_group">
+      <input type="text" placeholder="Enter your Name">
+    </div>  
+    <div class="form_group">
+      <input type="text" placeholder="Enter your Age">
+    </div>
+    <div class="form_group">
+      <input type="text" placeholder="Enter your Gender">
+    </div>
+    <div class="form_group">
+      <input type="text" placeholder="Enter your Address">
+    </div>
+    <div class="form_group">
+      <input type="text" placeholder="Enter your Email">
+    </div>
+    <div class="form_group">
+      <input type="text" placeholder="Enter your Contact Number">
+    </div>
+    <button class="btn">Submit</button>
+   </form>
+</div>
+</body>
+</html>
